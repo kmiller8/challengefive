@@ -34,10 +34,8 @@ $(".hours").each(function(){
 })
 };
 
+//changes color of time blocks based on current hour
 function hourColor () {
-    
-   
-    console.log(hours)
 
     $(".time-block").each(function () {
         
