@@ -38,10 +38,8 @@ $(".hours").each(function(){
 function hourColor () {
 
     $(".time-block").each(function () {
-        
 
         var currentHour = parseInt($(this).attr("time"));
-        console.log(currentHour);
 
         if (currentHour == hours) {
             $(this).addClass("present");
