@@ -36,23 +36,31 @@ $(".hours").each(function(){
 
 //changes color of time blocks based on current hour
 function hourColor () {
-
+    
     $(".time-block").each(function () {
+        
 
         var currentHour = parseInt($(this).attr("time"));
+        
 
         if (currentHour == hours) {
             $(this).addClass("present");
+            $(this).removeClass("past");
+            $(this).removeClass("future");
 
 
         } 
         else if (currentHour > hours) {
             $(this).addClass("future");
+            $(this).removeClass("past");
+            $(this).removeClass("present");
         
         } 
         
         else {
             $(this).addClass("past");
+            $(this).removeClass("present");
+            $(this).removeClass("future");
         
         }
     })
